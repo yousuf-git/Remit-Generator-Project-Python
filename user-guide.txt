@@ -1,0 +1,25 @@
+--------------Libraries / Modules required---------------
+
+os
+openpyxl
+pandas
+datetime
+time
+tqdm
+threading
+
+------------Files Required------------
+
+helper.xlsx
+Template.xlsx
+Input Remit
+
+------------------Steps-------------
+
+1. Run script.bat
+	helper.xlsx file will open 
+	Simply Save it by ctrl + S and close it
+
+2. Run script-2.bat
+	Final Remit will be automatically saved in current date folder
+	Final Remit.xls may show a warning so you need to save the Remit.xlsx file in xls format manually again
