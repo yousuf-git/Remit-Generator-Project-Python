@@ -1,12 +1,12 @@
 import os
 import openpyxl as xl # for excel files modification
 from openpyxl.styles import Border, Side, Font 
-import pandas as pd # for data analysis like grouoing
+import pandas as pd # for data analysis like grouping
 import time
 from tqdm import tqdm # for loading bar generation
 import threading # for creating thread of loading-bar function while loading a file
 
-# loading bar for 20 seconds
+# loading bar for approx 20 seconds
 def loading_screen(duration=20, iterations=230):
     sleep_time = duration / iterations
     for _ in tqdm(range(iterations), desc="", ncols=75):
@@ -66,8 +66,7 @@ for filename in os.listdir(script_dir):
             helperPath = os.path.join(script_dir, filename)
         elif filename.__contains__("Template"):
             templatePath = os.path.join(script_dir, filename)
-            
-
+        
 """Load Remit Workbook"""
 print("Remit Loading.....")
 remitWb = xl.load_workbook(filename=remitPath)
